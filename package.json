@@ -1,6 +1,6 @@
 {
   "name": "handy-toolkit",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A toolkit of utility functions",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
