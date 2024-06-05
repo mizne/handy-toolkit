@@ -1,6 +1,6 @@
 {
   "name": "handy-toolkit",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A toolkit of utility functions",
   "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
