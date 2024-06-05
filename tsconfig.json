@@ -1,10 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "declaration": true,
-    "outDir": "./dist",
-    "strict": true
+    "target": "ES2020", // 或者 "ESNext" 依据你需要支持的 JavaScript 版本
+    "module": "ESNext", // 设置为 ESNext 以生成 ECMAScript 模块
+    "moduleResolution": "node", // Node.js 风格的模块解析
+    "outDir": "./dist", // 输出目录
+    "rootDir": "./src", // 源文件目录
+    "strict": true, // 启用所有严格类型检查选项
+    "esModuleInterop": true, // 启用对 CommonJS 模块默认导出的互操作性支持
+    "skipLibCheck": true, // 跳过声明文件检查
+    "forceConsistentCasingInFileNames": true, // 强制文件名一致
+    "declaration": true, // 生成声明文件
+    "sourceMap": true, // 生成源映射文件
+    "noImplicitAny": true, // 禁止隐式 any 类型
+    "strictNullChecks": true // 启用严格的空值检查
   },
-  "include": ["src"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

@@ -2,11 +2,19 @@
   "name": "handy-toolkit",
   "version": "0.0.4",
   "description": "A toolkit of utility functions",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
   "scripts": {
     "test": "jest",
-    "build": "tsc",
+    "build": "tsc --outDir dist/esm && tsc --module CommonJS --outDir dist/cjs",
     "prepublishOnly": "npm test && npm run build"
   },
   "files": [
@@ -23,7 +31,7 @@
     "typescript"
   ],
   "author": "huizhanren <w20054319@gmail.com>",
-  "license": "ISCMIT",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mizne/handy-toolkit.git/issues"
   },
