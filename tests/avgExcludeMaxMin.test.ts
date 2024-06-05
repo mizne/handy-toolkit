@@ -1,4 +1,4 @@
-// tests/index.test.ts
+// tests/avgExcludeMaxMin.test.ts
 import { avgExcludeMaxMin } from '../src/avgExcludeMaxMin';
 
 test('avg [] to equal 0', () => {

@@ -1,7 +1,7 @@
 {
   "name": "handy-toolkit",
   "version": "0.0.2",
-  "description": "",
+  "description": "A toolkit of utility functions",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -12,9 +12,22 @@
   "files": [
     "dist/**/*"
   ],
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mizne/handy-toolkit.git"
+  },
+  "keywords": [
+    "utility",
+    "toolkit",
+    "javascript",
+    "typescript"
+  ],
   "author": "huizhanren <w20054319@gmail.com>",
-  "license": "ISC",
+  "license": "ISCMIT",
+  "bugs": {
+    "url": "https://github.com/mizne/handy-toolkit.git/issues"
+  },
+  "homepage": "https://github.com/mizne/handy-toolkit.git#readme",
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "jest": "^29.7.0",
