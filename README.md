@@ -15,13 +15,13 @@ handy-toolkit is a collection of utility functions to simplify JavaScript develo
 You can install handy-toolkit via npm:
 
 ```bash
-npm install my-toolkit
+npm install handy-toolkit
 ```
 
 ## usage
 
 ```javascript
-import { avgExcludeMaxMin } from "my-toolkit";
+import { avgExcludeMaxMin } from "handy-toolkit";
 
 console.log(avgExcludeMaxMin([])); // 0
 console.log(avgExcludeMaxMin([2])); // 2
